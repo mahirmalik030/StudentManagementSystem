@@ -1,6 +1,6 @@
 package test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
@@ -25,6 +25,14 @@ public class StudentServiceTest {
         assertEquals(
                 "B",
                 service.calculateGrade(75));
+    }
+
+    @Test
+    public void testGradeC() {
+
+        assertEquals(
+                "C",
+                service.calculateGrade(65));
     }
 
     @Test
